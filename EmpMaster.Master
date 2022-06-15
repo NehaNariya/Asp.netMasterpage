@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmpMaster.master.cs" Inherits="MockTestFinal.EmpMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+      <%--boostrap link--%>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!--Header-->
+ <!--   <h1>Employee Master</h1>
+    <a href="NewEmployee.aspx">New Employee</a> |
+    <a href="UpdateEmployee.aspx">Update Employee</a>|
+    <a href="RemoveEmployee.aspx">Remove Employee</a>|
+    <a href="ViewAllEmployee.aspx">View All Employees</a>-->
+
+    <form id="form1" runat="server">
+        <div>
+  
+            <%--header--%>
+
+            <h1 class="align-content-center">Employee Master</h1>
+                  
+  <!--          <nav id="nav">
+                <a href="NewEmployee.aspx">New Employee     |</a>
+                <a href="UpdateEmployee.aspx">Update Employee       |</a>
+                <a href="RemoveEmployee.aspx">Remove Employee       |</a>
+                <a href="ViewEmployee.aspx">View Employee</a>
+            </nav>-->
+
+            
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="NewEmployee.aspx">New Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="UpdateEmployee.aspx">Update Employee </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="RemoveEmployee.aspx">Remove Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ViewAllEmployee.aspx">View Employee</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+              <%--header--%>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                <%--Body--%>
+
+                <%--Body--%>
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+          <%--footer--%>
+
+            <footer class="fixed-bottom bg-light text-black">
+                Contact Us:<br />
+                HRM Systems,
+                <br />
+                Rajkot, Gujarat
+            </footer>
+
+          <%--footer--%>
+
+
+    </form>
+
+    <!--Footer-->
+  <!--   <p>
+        Contact As :<br />
+        HRM Systems,<br />
+        Rajkot,Gujarat.
+     </p>-->
+    
+
+</body>
+</html>
